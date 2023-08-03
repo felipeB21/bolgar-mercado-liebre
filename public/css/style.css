@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;  
+}
+.logo-mercado-liebre-header {
+    width: 150px;
+}
+.bg-yellow {
+    background-color: #EAC926;;
+}
+.bg-light-grey {
+    background-color: #ebebeb;
+}
+.p-1 {
+    padding: 8px;
+}
+.w-1 {
+    width: 50%;
+}
+.section-title {
+    font-size: 24px;
+}
+.price {
+    font-size: 18px;
+}
+.off {
+    font-size: 16px;
+}
+.cafetera-moulinex-img {
+    width: 150px;
+}
+.mac-book-img {
+    width: 150px;;
+}
+.samsung-galaxy-img {
+    width: 150px;
+}
+.smart-tv-img {
+    width: 150px;
+}
+footer {
+    text-align: center;
+}
+.description {
+    font-size: 16px;
+}
