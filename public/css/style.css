@@ -1,12 +1,16 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+/* header */
+
 body {
     font-family: 'Roboto', sans-serif;  
 }
 .logo-mercado-liebre-header {
     width: 150px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    text-decoration: none;
 }
 .bg-yellow {
     background-color: #EAC926;;
@@ -20,8 +24,15 @@ body {
 .w-1 {
     width: 50%;
 }
+.burger-menu {
+    text-align: center;
+}
+
+/* main */
+
 .section-title {
     font-size: 24px;
+    text-transform: uppercase;
 }
 .price {
     font-size: 18px;
@@ -41,9 +52,34 @@ body {
 .smart-tv-img {
     width: 150px;
 }
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.vw-90 {
+    width: 90vw;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.bt-1px {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+.border-grey {
+    border-color: #ebebeb;
+}
+.bg-withe {
+    background-color: white;
+}
+
+/* footer */
+
 footer {
     text-align: center;
 }
 .description {
     font-size: 16px;
+    padding: 16px;
 }
+
