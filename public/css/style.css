@@ -5,7 +5,17 @@ body {
 }
 .logo-mercado-liebre-header {
     width: 150px;
+    margin: 20px;
+    padding: 0;
 }
+
+.search-box{
+    width: 20%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -13,7 +23,7 @@ li {
     text-decoration: none;
 }
 .bg-yellow {
-    background-color: #EAC926;;
+    background-color: #EAC926;
 }
 .bg-light-grey {
     background-color: #ebebeb;
@@ -28,6 +38,30 @@ li {
     text-align: center;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-section {
+    display: flex;
+    align-items: flex-end;
+}
+.nav-section li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-account {
+    display: flex;
+    align-items: flex-end;
+}
+.nav-account li a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
 /* main */
 
 .section-title {
@@ -40,18 +74,7 @@ li {
 .off {
     font-size: 16px;
 }
-.cafetera-moulinex-img {
-    width: 150px;
-}
-.mac-book-img {
-    width: 150px;;
-}
-.samsung-galaxy-img {
-    width: 150px;
-}
-.smart-tv-img {
-    width: 150px;
-}
+
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -72,6 +95,79 @@ li {
 .bg-withe {
     background-color: white;
 }
+
+.cafetera-moulinex .fa-truck {
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.cafetera-moulinex {
+    position: relative;
+}
+
+.mac-book .fa-truck {
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.mac-book {
+    position: relative;
+}
+
+.samsung-galaxy .fa-truck {
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.samsung-galaxy {
+    position: relative;
+}
+
+.smart-tv .fa-truck {
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.smart-tv {
+    position: relative;
+}
+
 
 /* footer */
 

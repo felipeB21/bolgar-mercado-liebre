@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form action="/register" method="POST">
+        <h3>Usuario</h3>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+
+        <h3>Fecha de nacimiento</h3>
+        <input type="date" name="nacimiento" id="nacimiento">
+
+        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+
+        <h3>Perfil de usuario</h3>
+        <input type="radio" name="perfil-usuario" value="Comprador" id="comprador">
+        <label for="comprador">Comprador</label>
+
+        <input type="radio" name="perfil-usuario" value="Vendedor" id="vendedor">
+        <label for="vendedor">Vendedor</label>
+
+        <h3>Intereses</h3>
+        <input type="checkbox" name="intereses" value="Electro" id="electro">
+        <label for="electro">Electro</label>
+    </form>
+</body>
+</html>
