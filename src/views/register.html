@@ -5,33 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <form action="/register" method="POST">
-        <h3>Usuario</h3>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+<body class="bg-light-grey">
+    <header class="fixed bg-yellow p-1"> 
+        <div class="nav-main">
+            <a href="/"><img class="logo-mercado-liebre-header" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+        <div class="search-nav">
+            <form>
+                <input class="search-box" type="search" name="search" placeholder="Buscar productos, marcas y mas">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <p>Compra en cuotas y sin tarjeta de creditos <i class="fa-solid fa-hand-holding-dollar"></i></p>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-section">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayudas</a></li>
+            </ul>
+            <nav class="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </nav> 
+            <ul class="nav-account"> 
+                <li><a href="/register">Crea tu cuenta</a> <i class="fa-solid fa-id-card"></i></li>
+                <li><a href="#">Ingresa</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="#">Mis compras</a> <i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </nav> 
+    </header>
 
-        <h3>Fecha de nacimiento</h3>
-        <input type="date" name="nacimiento" id="nacimiento">
+    <div class="main-form">
+        <form action="/">
+            <div class="form-id">
+                <label for="id-name" id="form1">
+                    Nombre
+                    <input type="text" name="id-name" id="id-name" placeholder="Nombre">
+                </label>
 
-        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <label for="id-lastname">
+                    Apellido
+                    <input type="text" name="id-lastname" id="id-lastname" placeholder="Apellido">
+                </label>
 
-        <h3>Perfil de usuario</h3>
-        <input type="radio" name="perfil-usuario" value="Comprador" id="comprador">
-        <label for="comprador">Comprador</label>
+                <label for="id-password">
+                    Contraseña
+                    <input type="password" name="id-password" id="id-password" placeholder="Contraseña">
+                </label>
 
-        <input type="radio" name="perfil-usuario" value="Vendedor" id="vendedor">
-        <label for="vendedor">Vendedor</label>
+                <label for="id-confirm-password">
+                    Confirmar contraseña
+                    <input type="password" name="id-confirm-password" id="id-confirm-password" placeholder="Confirmar contraseña">
+                </label>
+            </div>
 
-        <h3>Intereses</h3>
-        <input type="checkbox" name="intereses" value="Electro" id="electro">
-        <label for="electro">Electro</label>
-    </form>
+            <div class="form-bday">
+                <label for="id-date">
+                    Fecha de nacimiento
+                    <input type="date" name="id-date" id="id-date">
+                </label>
+            </div>
+
+
+            <div class="id-profile">
+                <p class="select-an-option">Seleccione una opcion</p>
+                <label for="id-seller">
+                    Vendedor
+                    <input type="radio" name="id-profile" id="id-seller">
+                </label>
+
+                <label for="id-buyer">
+                    Comprador
+                    <input type="radio" name="id-profile" id="id-buyer">
+                </label>
+            </div>
+
+            <div class="id-category">
+                <form>
+                    <label for="categorys">
+                        Categorias de interes
+                        <select name="id-category" id="">
+                            <option value="electro">Electro</option>
+                            <option value="moda">Moda</option>
+                            <option value="hogar">Hogar</option>
+                            <option value="jugueteria">Jugueteria</option>
+                            <option value="vidaSana">Vida Sana</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+
+            <div class="upload-photo">
+                <label for="id-photo">
+                    Foto de perfil
+                    <input type="file" name="id-photo" id="id-photo" accept="image/*">
+                </label>
+            </div>
+
+            <div class="button-container">
+                <a href="/"><button type="submit">Enviar</button></a>
+                <a href="/register"><button type="reset">Borrar</button></a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
