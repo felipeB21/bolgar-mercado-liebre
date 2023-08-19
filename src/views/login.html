@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
+    <title>Ingresa</title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -40,80 +40,34 @@
             </ul>
         </nav> 
     </header>
-
-    <div class="main-form">
+    <main>
         <form action="/">
-            <div class="form-id">
-                <label for="id-name" id="form1">
-                    Nombre
-                    <input type="text" name="id-name" id="id-name" placeholder="Nombre">
-                </label>
-
-                <label for="id-lastname">
-                    Apellido
-                    <input type="text" name="id-lastname" id="id-lastname" placeholder="Apellido">
-                </label>
-
-                <label for="id-password">
-                    Contraseña
-                    <input type="password" name="id-password" id="id-password" placeholder="Contraseña">
-                </label>
-
-                <label for="id-confirm-password">
-                    Confirmar contraseña
-                    <input type="password" name="id-confirm-password" id="id-confirm-password" placeholder="Confirmar contraseña">
-                </label>
-            </div>
-
-            <div class="form-bday">
-                <label for="id-date">
-                    Fecha de nacimiento
-                    <input type="date" name="id-date" id="id-date">
-                </label>
-            </div>
-
-
-            <div class="id-profile">
-                <p class="select-an-option">Seleccione una opcion</p>
-                <label for="id-seller">
-                    Vendedor
-                    <input type="radio" name="id-profile" id="id-seller">
-                </label>
-
-                <label for="id-buyer">
-                    Comprador
-                    <input type="radio" name="id-profile" id="id-buyer">
-                </label>
-            </div>
-
-            <div class="id-category">
-                <form>
-                    <label for="categorys">
-                        Categorias de interes
-                        <select name="id-category" id="">
-                            <option value="electro">Electro</option>
-                            <option value="moda">Moda</option>
-                            <option value="hogar">Hogar</option>
-                            <option value="jugueteria">Jugueteria</option>
-                            <option value="vidaSana">Vida Sana</option>
-                        </select>
+            <div class="form-field">
+                <div class="id-data">
+                    <label for="user-name">
+                        Nombre
+                        <input type="text" name="user-name" id="user-name" placeholder="Nombre">
                     </label>
-                </form>
-            </div>
 
-            <div class="upload-photo">
-                <label for="id-photo">
-                    Foto de perfil
-                    <input type="file" name="id-photo" id="id-photo" accept="image/*">
-                </label>
-            </div>
+                    <label for="user-lastname">
+                        Apellido
+                        <input type="text" name="user-lastname" id="user-lastname" placeholder="Apellido">
+                    </label>
+                    
+                    <label for="user-password">
+                        Contraseña
+                        <input type="password" name="user-password" id="user-password" placeholder="Contraseña">
+                    </label>
 
-            <div class="button-container">
-                <a href="/"><button type="submit">Enviar</button></a>
-                <a href="/register"><button type="reset">Borrar</button></a>
+                    <label for="user-password-confirm">
+                        Confirmar contraseña
+                        <input type="password" name="user-password-confirm" id="user-password-confirm" placeholder="Confirmar contraseña">
+                    </label>     
+                </div>
+                <button type="submit">Enviar</button>
             </div>
         </form>
-    </div>
+    </main>
     <footer>
         <i class="icon-bottom fas fa-credit-card"></i>
         <section class="payment-method">
